@@ -13,7 +13,11 @@ module Pronto
                          message.line.commit_line.new_lineno)
         end
 
-        "#{commit_messages.compact.count} Pronto messages posted to GitLab"
+        if commit_messages.compact.count == 0
+          return 0
+        else
+          "#{commit_messages.compact.count} Pronto messages posted to GitLab"
+        end
       end
 
       private
