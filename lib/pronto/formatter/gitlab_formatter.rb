@@ -14,7 +14,7 @@ module Pronto
         end
 
         if commit_messages.compact.count == 0
-          return 0
+          return ''
         else
           "#{commit_messages.compact.count} Pronto messages posted to GitLab"
         end
