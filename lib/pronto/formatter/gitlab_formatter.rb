@@ -12,7 +12,12 @@ module Pronto
                          message.path,
                          message.line.commit_line.new_lineno)
         end
-
+        puts ""
+        puts ""
+        puts ""
+        puts "gitlab formatter"
+        puts "gitlab formatter"
+        return 0
         # if commit_messages.compact.count == 0
         #   return ''
         # else
