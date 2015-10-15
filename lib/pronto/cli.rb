@@ -50,6 +50,14 @@ module Pronto
       formatter = ::Pronto::Formatter.get(options[:formatter])
       commit = options[:index] ? :index : options[:commit]
       messages = ::Pronto.run(commit, '.', formatter, path)
+      puts ""
+      puts "messages"
+      puts messages
+      puts ""
+      puts messages.inspect
+      puts ""
+      messages.each do |msg| puts msg end
+
       exit(messages.count) if options[:'exit-code']
     rescue Rugged::RepositoryError
       puts '"pronto" should be run from a git repository'
