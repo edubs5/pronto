@@ -52,7 +52,7 @@ module Pronto
       messages = ::Pronto.run(commit, '.', formatter, path)
       puts ""
       puts "message.count"
-      puts message.count
+      puts messages.count
       puts ""
       puts "messages"
       puts messages
