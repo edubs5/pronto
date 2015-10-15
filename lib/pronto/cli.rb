@@ -51,6 +51,9 @@ module Pronto
       commit = options[:index] ? :index : options[:commit]
       messages = ::Pronto.run(commit, '.', formatter, path)
       puts ""
+      puts "message.count"
+      puts message.count
+      puts ""
       puts "messages"
       puts messages
       puts ""

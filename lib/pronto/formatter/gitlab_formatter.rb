@@ -13,7 +13,10 @@ module Pronto
                          message.line.commit_line.new_lineno)
         end
         puts ""
+        puts "commit_messages"
+        puts commit_messages.inspect
         puts ""
+        puts commit_messages
         puts ""
         puts "gitlab formatter"
         puts "gitlab formatter"
