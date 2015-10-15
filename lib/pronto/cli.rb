@@ -61,7 +61,7 @@ module Pronto
       puts ""
       messages.each do |msg| puts msg end
 
-      exit(messages.count) if options[:'exit-code']
+      exit(0) if options[:'exit-code']
     rescue Rugged::RepositoryError
       puts '"pronto" should be run from a git repository'
     end
