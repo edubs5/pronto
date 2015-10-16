@@ -66,7 +66,9 @@ module Pronto
     desc 'compose_exit_msg', 'Composes exit message'
 
     def compose_exit_msg(count)
-      count == 0 ? 0 : count
+      puts ""
+      puts "message.count is #{count}"
+      puts "the exit code is #{count}"
     end
 
     desc 'list', 'Lists pronto runners that are available to be used'

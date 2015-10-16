@@ -37,6 +37,11 @@ module Pronto
     formatted = formatter.format(result, repo, patches)
     puts formatted if formatted
 
+    puts ""
+    puts "result"
+    puts result.inspect
+    puts result
+    puts ""
     result
   end
 
