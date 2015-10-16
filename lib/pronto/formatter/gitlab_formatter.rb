@@ -12,20 +12,8 @@ module Pronto
                          message.path,
                          message.line.commit_line.new_lineno)
         end
-        puts ""
-        puts "commit_messages"
-        puts commit_messages.inspect
-        puts ""
-        puts commit_messages
-        puts ""
-        puts "gitlab formatter"
-        puts "gitlab formatter"
-        return 0
-        # if commit_messages.compact.count == 0
-        #   return ''
-        # else
-        #   "#{commit_messages.compact.count} Pronto messages posted to GitLab"
-        # end
+
+        "#{commit_messages.compact.count} Pronto messages posted to GitLab"
       end
 
       private
