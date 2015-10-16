@@ -63,6 +63,8 @@ module Pronto
       puts '"pronto" should be run from a git repository'
     end
 
+    desc 'compose_exit_msg', 'Composes exit message'
+
     def compose_exit_msg(count)
       count == 0 ? 0 : count
     end
